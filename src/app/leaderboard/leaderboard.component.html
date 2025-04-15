@@ -1,0 +1,14 @@
+<h1>Sandwich King High Scores</h1>
+<br>
+<table>
+    <tr>
+        <th>RANK</th>
+        <th>NAME</th>
+        <th>SCORE</th>
+    </tr>
+    <tr *ngFor="let score of scores; let index = index">
+        <td>{{ index + 1}}</td>
+        <td>{{ score.user.userName}}</td>
+        <td>{{ score.score }}</td>        
+    </tr>
+</table>

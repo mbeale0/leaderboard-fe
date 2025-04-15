@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: whitesmoke;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    font-size: x-large;
+    width: 15%;
+    color: whitesmoke;
+}
+
+tr {
+    font-size: xx-large;
+    color: whitesmoke;
+}
