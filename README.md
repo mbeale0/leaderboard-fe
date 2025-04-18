@@ -1,59 +1,17 @@
-# Frontend
+# LeaderBoard API
+This is the frontend for my full stack Spring Boot / Angular App.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+The goal of this project is to develop both the front and back end, refreshing myself on Spring Boot, and as a first dive in Angular.
 
-## Development server
+## What the App Does:
+(same on both FE and BE Readmes)
+I also enjoy developing video games, and had recently made a small two player competitive one titled "Sandwich King", where players compete to make the most sandwiches. This app takes inspiration from old arcade leaderboards, and displays the top ten scores, which is the most sandwiches made. At the time of writing, these are just manual data.
 
-To start a local development server, run:
+To add a second layer of complexity, I also wanted to add a simple user stats window. This allowed for some exporation of routes and additional endpoints. This page will show a users number of games played, top score, and top 5 scores overall.
 
-```bash
-ng serve
-```
+Overall this app is fairly simple, but has allowed me to learn about several new front end concepts, and reinforce my Spring Boot skills, and has given me a much better picture of Full Stack Development
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## The Front End
+While I was overall familiar with front end concepts, it has been several years since I've been able to get my feet wet in this world.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Along with the root app component, I have two custom components, one for the main leaderboard and one for the individual user stats screen. Both interacted with the inject "GameService" which handles the API calls. While the components are simple, it was able to see how they interact with each other using routes, and the benefit of having a singular injectable service across multiple components
