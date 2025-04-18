@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { GameService } from '../game.service';
 import { Score } from '../score';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-userstats',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './userstats.component.html',
   styleUrl: './userstats.component.css'
 })
@@ -34,7 +35,6 @@ export class UserstatsComponent {
 
     this.gameService.getTopFiveScoresForUser(this.userId).then((scores: Score[]) => {
       this.scores = scores;
-      console.log(this.scores);
     }) 
   }
 }

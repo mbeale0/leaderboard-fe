@@ -1,5 +1,6 @@
 <h1>Player Stats For {{userName}}</h1>
 <br><br>
+
 <div style="clear: both" class="container">
     <div id="games">
         <h2>Games Played</h2>
@@ -11,11 +12,13 @@
     </div>
 </div>
 <br><br><br><br><br><br>
-<div style="clear: both" class="container">
+<div style="clear: both" class="scores">
     <h2>Top Five Scores</h2>
     <p *ngFor="let score of scores">
         {{ score.score != -1 ? (score.score) : 'N/A'}}        
     </p>
-
 </div>
+
+
+<a [routerLink]="['/']"><button class="btn btn-success pull-right">Leaderboard</button></a>
 
