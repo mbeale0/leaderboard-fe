@@ -1,20 +1,20 @@
-<h1>Player Stats for User {{userId}}</h1>
+<h1>Player Stats For {{userName}}</h1>
 <br><br>
 <div style="clear: both" class="container">
     <div id="games">
         <h2>Games Played</h2>
-        <p>12</p>
+        <p>{{gamesPlayed}}</p>
     </div>
     <div id="score">
         <h2>Top Score</h2>
-        <p>23</p>
+        <p>{{topScore}}</p>
     </div>
 </div>
 <br><br><br><br><br><br>
 <div style="clear: both" class="container">
-    <h2>Top Ten Scores</h2>
+    <h2>Top Five Scores</h2>
     <p *ngFor="let score of scores">
-        {{ score.score }}>
+        {{ score.score != -1 ? (score.score) : 'N/A'}}        
     </p>
 
 </div>

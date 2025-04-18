@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, Injectable } from '@angular/core';
-import { ToptenService } from '../topten.service';
-import { RouterLink, Routes } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { GameService } from '../game.service';
+import { RouterLink } from '@angular/router';
 import { Score } from '../score';
 
 @Component({
@@ -12,11 +12,11 @@ import { Score } from '../score';
 })
 
 export class LeaderboardComponent {
-  toptenService: ToptenService = inject(ToptenService);
+  gameService: GameService = inject(GameService);
   scores: Score[] = [];
 
   constructor() {
-    this.toptenService.getTopTenUserScores().then((scores: Score[]) => {
+    this.gameService.getTopTenUserScores().then((scores: Score[]) => {
       this.scores = scores; 
     });
   }
