@@ -8,7 +8,7 @@
     </tr>
     <tr *ngFor="let score of scores; let index = index">
         <td>{{ index + 1}}</td>
-        <td>{{ score.user.userName}}</td>
+        <td><a [routerLink]="['/stats', score.user.id]" routerLinkActive="router-link-active">   {{ score.user.userName}}</a></td>
         <td>{{ score.score }}</td>        
     </tr>
 </table>

@@ -1,12 +1,12 @@
-import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { Component, inject, Injectable } from '@angular/core';
 import { ToptenService } from '../topten.service';
+import { RouterLink, Routes } from '@angular/router';
 import { Score } from '../score';
 
 @Component({
   selector: 'app-leaderboard',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './leaderboard.component.html',  
   styleUrl: './leaderboard.component.css'
 })

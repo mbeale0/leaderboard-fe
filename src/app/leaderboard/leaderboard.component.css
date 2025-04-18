@@ -20,3 +20,8 @@ tr {
     font-size: xx-large;
     color: whitesmoke;
 }
+
+a {
+    color: lightgray;
+    font-style: italic;
+}
