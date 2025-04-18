@@ -1,1 +1,21 @@
-<p>userstats works for {{userId}}!</p>
+<h1>Player Stats for User {{userId}}</h1>
+<br><br>
+<div style="clear: both" class="container">
+    <div id="games">
+        <h2>Games Played</h2>
+        <p>12</p>
+    </div>
+    <div id="score">
+        <h2>Top Score</h2>
+        <p>23</p>
+    </div>
+</div>
+<br><br><br><br><br><br>
+<div style="clear: both" class="container">
+    <h2>Top Ten Scores</h2>
+    <p *ngFor="let score of scores">
+        {{ score.score }}>
+    </p>
+
+</div>
+

@@ -1,0 +1,35 @@
+h1, h2 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+h2 {
+    display: inline;
+    margin: 10%;
+}
+
+
+.container {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    height: 5%;
+}
+
+#games {
+    width: 40%;
+    float: left;
+}
+
+#score {
+    width: 40%;
+    float: right;    
+}
+
+p{
+    color: whitesmoke;
+    font-size: x-large;
+    text-align: center;
+}
+
+
